@@ -1,0 +1,67 @@
+borne cls "Sistema de Inventario Vivero v1.0" {
+    echo ===========================================
+    echo    SISTEMA DE CONTROL Y GESTION BORNE
+    echo ===========================================
+    
+    # Declaración de variables estilo Python (sin % ni set confuso)
+    planta = "Suculenta Rara"
+    stock_actual = 8
+    stock_minimo = 15
+    precio_unidad = 12
+    
+    echo Verificando inventario para: planta
+    echo Cantidad actual: stock_actual
+    
+    # Estructura de control estilo C con llaves {}
+    if (stock_actual < stock_minimo) {
+        echo [ALERTA] El stock esta por debajo del minimo requerido.
+        echo Calculando unidades a reproducir...
+        
+        faltantes = stock_minimo - stock_actual
+        echo Unidades faltantes: faltantes
+        
+        # Bucle estilo C para simular reproducción/lote
+        lote = 1
+        while (lote <= faltantes) {
+            echo Generando registro para planta numero: lote
+            lote = lote + 1
+        }
+        
+        echo Lote completado exitosamente.
+    } else {
+        echo [OK] El stock es suficiente para la venta.
+    }
+    
+    # Cálculo de valor total del inventario
+    valor_total = stock_actual * precio_unidad
+    echo Valor estimado en inventario: valor_total USD
+    
+    echo ===========================================
+    echo Ejecucion finalizada con exito en Borne.
+}
+
+
+Nota de presentación del proyecto Borne
+
+Estimada comunidad de desarrolladores y lectores:
+
+Pongo a su disposición Borne, un proyecto experimental de lenguaje de programación desarrollado durante un periodo breve de exploración de siete días mas que todo domingos.
+
+Consciente de que se trata de una base ligera y un proyecto de corta duración, decido liberarlo y compartirlo con ustedes bajo una premisa abierta: cualquier persona interesada es libre de modificarlo, adaptarlo, expandirlo o utilizarlo para los fines que considere oportunos.
+¿Qué es Borne?
+
+Para ser completamente transparentes sobre su estado actual, Borne cuenta únicamente con un comando funcional implementado: el comando echo.
+
+Su diseño estructural es un ejercicio de experimentación que combina la lógica de tres grandes pilares de la programación —C, Python y el entorno de archivos .bat— elegidos por ser los más accesibles y fáciles de aprender.
+Dos únicas condiciones del autor:
+
+Si decides tomar este código, transformarlo o construir sobre esta base, lo único que solicito y establezco como condición es:
+
+    Mantener el nombre oficial del proyecto: Borne.
+
+    Reconocer y mantener siempre presente que este proyecto nace en El Salvador.
+
+El código está abierto para que la comunidad experimente, amplíe sus comandos o haga lo que desee con él. ¡Disfruten programando!
+
+— Creador de Borne (El Salvador)
+POSDATA "No segui por que me daba peresa tambien pero agan lo que se les de la gana"
